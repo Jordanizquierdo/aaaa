@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/diseño.css">
+    <script src="java.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/firebase.js"></script>
+</head>
+<body id="body">
+    <div id="dib">
+        <button id="btn" onclick="oscuro()" type="button">Cambiar Color</button>
+        <button id="btn" onclick="tamanio()" type="button">Cambiar Tamaño</button>
+    </div>
+    <div id="titulo"><h1>Veterianaria perrito</h1></div>
+    <div id="mision">
+        <h2>Mision</h2>
+        <p>Nuestra Misión
+            La misión de la Clínica Veterinaria Metropolitana es difundir la 
+            excelencia médica entre la profesión médico veterinaria con el 
+            objetivo de mejorar la salud y el bienestar de los animales.</p>
+    </div><br>
+    <div id="vision">
+        <h2>Vision</h2>
+        <p>Nuestra Visión
+
+            Ser la clínica veterinaria de referencia y reconocida a nivel nacional por la calidad de su equipo 
+            profesional, la infraestructura y el equipamiento de primera línea. Igualmente, ofrecer servicios 
+            integrales que permitan cumplir con todas las necesidades de nuestros pacientes.</p>
+    </div>
+    <img src="img/img1.jpg" alt="perro y doctor" id="img1">
+    <img src="img/img2.jpg" alt="doctor" id="img2">
+    <img src="img/img3.jpg" alt="perro y gato" id="img3">
+    <img src="img/img4.jpg"  id="img4">
+    <img src="img/img5.jpg"  id="img5">
+    <img src="img/img6.jpg"  id="img6">
+        <div id="uno">
+            <h1>¿Quienes Somos?</h1>
+            <h3>Clinica Veterinaria</h3>
+            <p>Nace hace más de tres décadas y con la idea de formar un equipo médico veterinario profesional y multidisciplinario en la atención de mascotas, comprometido con la salud y bienestar animal.</p>
+            <h3>Historia</h3>
+            <p>Desde 1980 apoyamos la investigación en universidades y realizamos campos clínicos para un proceso docente y formativo de los futuros profesionales médicos veterinarios. Nuestro equipo está conformado por excelentes profesionales y asistentes para ofrecerles un servicio de calidad.</p>
+        </div><br>
+        <div id="comidas">
+        <h2>¿Que comida recomendamos para sus mascotas?
+            Las siguientes:
+        </h2>
+        <img src="img/comida1.jpg"  id="comi1">
+        <img src="img/comida2.jpg"  id="comi2">
+        <img src="img/comida3.jpg">
+        <img src="img/comida4.jpg">
+        <img src="img/comida5.jpg">
+        <img src="img/comida6.jpg">
+        </div>
+        <div id="redes">
+            <h2>Redes Sociales</h2>
+            <a href="https://www.instagram.com/jacksperrow.cl/"><h1>Instagram</h1></a>
+            <a href="https://www.facebook.com/jacksperrow.cl"><h1>facebook</h1></a>
+        </div>
+        <div id="formulario">
+            <h2>Para consulta ingrese correo y consulta</h2>
+            <form>
+                <h4>Ingrese el tipo de mascota</h4>
+                <input type="radio" name="tipo" value="perro">
+                <label>Perro</label>
+                <input	type="radio" name="tipo" value="gato">
+                <label>gato</label>
+                <input type="radio" name="tipo" value="hamster">
+                <label>Hamster</label><br>
+                <label>Ingrese los sintomas:</label><br>
+                <textarea id="sintomas"></textarea><br>
+                <label>Ingrese tipo de problema:</label>
+                <select name="problemas" id="problemas">
+                    <option value="estomacal">Estomacal</option>
+                    <option value="urinario">Urinario</option>
+                    <option value="cerebral">Cerebral</option>
+                </select><br>
+                <input type="text" id="nombre" placeholder="nombre">
+                <input type="text" id="nombre_mascota" placeholder="nombre_mascota">
+                <button type="button" id="btnRegistrar">Registrar</button>
+    
+
+            
+            </form>
+            <table>
+                    <tr>
+                        <th>tipo</th>
+                        <th>sintomas</th>
+                        <th>problemas</th>
+                        <th>nombre</th>
+                        <th>Nombre Mascota</th>
+                    </tr>
+                <tbody id="CuerpoTabla">
+                </tbody>
+            </table>
+            <h1>Actualizar</h1>
+            <h4>Ingrese el tipo de mascota</h4>
+                <input type="radio" name="tipo" value="perro">
+                <label>Perro</label>
+                <input	type="radio" name="tipo" value="gato">
+                <label>gato</label>
+                <input type="radio" name="tipo" value="hamster">
+                <label>Hamster</label><br>
+                <label>Ingrese los sintomas:</label><br>
+                <textarea id="UPDsintomas"></textarea><br>
+                <label>Ingrese tipo de problema:</label>
+                <select name="problemas" id="UPDproblemas">
+                    <option value="estomacal">Estomacal</option>
+                    <option value="urinario">Urinario</option>
+                    <option value="cerebral">Cerebral</option>
+                </select><br>
+                <input type="text" id="UPDnombre" placeholder="nombre">
+                <input type="text" id="UPDnombre_mascota" placeholder="nombre_mascota">
+            <button id="btnActualizar">Actualizar</button>
+
+        </div>
+        <div id="menu">
+            <h1>Menu de navegacion</h1>
+            <li><a href="#mision">Mision</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#uno">¿Quienes Somos?</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#comidas">Comidas recomendadas</a></li>
+            <li><a href="#redes">Redes Sociales</a></li>
+
+        </div>
+        <div id="video">
+            <h1>¿Por que tener mascotas?</h1>
+            <h3>Aqui un breve cuento sobre mascotas</h3>
+            <video width="400" controls>
+            <source src="img/El cuento de las Mascotas.mp4" type="video/mp4">
+        </div>
+
+    
+
+
+    
+</body>
+</html>
